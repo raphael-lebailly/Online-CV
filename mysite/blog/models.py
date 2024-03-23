@@ -1,5 +1,6 @@
 from django import forms
 from django.db import models
+
 from wagtail.models import Page, Orderable
 from wagtail.fields import RichTextField
 from wagtail.admin.panels import FieldPanel, InlinePanel, MultiFieldPanel
@@ -7,10 +8,16 @@ from wagtail.search import index
 
 from modelcluster.fields import ParentalKey, ParentalManyToManyField
 from modelcluster.contrib.taggit import ClusterTaggableManager # for Tags
+
 from taggit.models import TaggedItemBase # for Tags
+
 from wagtail.snippets.models import register_snippet # for Authors
+
 import datetime
 
+# ===================================================================================================================================================
+# BLOG
+# ===================================================================================================================================================
 class BlogIndexPage(Page):
     intro = RichTextField(blank=True)
     def get_context(self, request):

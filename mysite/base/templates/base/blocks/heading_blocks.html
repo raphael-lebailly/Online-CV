@@ -1,0 +1,16 @@
+{% if self.size == 'h2' %}
+    <h2>{{ self.heading_text }}</h2>
+{% elif self.size == 'h3' %}
+    <h3>{{ self.heading_text }}</h3>
+{% elif self.size == 'h4' %}
+    <h4>{{ self.heading_text }}</h4>
+{% endif %}
+
+
+{% comment %} 
+
+You can also create a custom template for a child block. 
+For example, to create a custom template for embed_block, 
+create a base/templates/base/blocks/embed_block.html file and add the following to it:
+{{ self }} 
+{% endcomment %}
