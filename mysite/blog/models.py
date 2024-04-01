@@ -29,7 +29,9 @@ class BlogIndexPage(Page):
 
     content_panels = Page.content_panels + [
         FieldPanel('intro')
+
     ]
+    subpage_types=['blog.BlogPage']
 
 class BlogPageTag(TaggedItemBase):
     content_object = ParentalKey(
@@ -81,6 +83,9 @@ class BlogPage(Page):
         # -------------------------------------------------------------------------------------------------------------------------------------
         InlinePanel('gallery_images', label="Gallery images"),
     ]        
+
+
+    parent_page_types=['blog.BlogIndexPage']
 
 # Inheriting from Orderable adds a sort_order field to the model to keep track of the ordering of images in the gallery.
 class BlogPageGalleryImage(Orderable):
