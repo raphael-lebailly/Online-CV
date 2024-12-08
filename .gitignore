@@ -1,2 +1,3 @@
-mysite/env
+mysite/.env
+mysite/settings/dev.py
 .DS_Store
