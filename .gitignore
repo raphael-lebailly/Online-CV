@@ -1,4 +1,5 @@
 mysite/.env
 mysite/.venv
 mysite/mysite/settings/dev.py
+mysite/mysite/settings/production.py
 .DS_Store
