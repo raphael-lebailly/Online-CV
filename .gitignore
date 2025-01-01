@@ -2,4 +2,5 @@ mysite/.env
 mysite/.venv
 mysite/mysite/settings/dev.py
 mysite/mysite/settings/production.py
+mysite/db.sqlite3
 .DS_Store

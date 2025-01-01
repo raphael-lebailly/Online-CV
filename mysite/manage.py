@@ -4,7 +4,7 @@ import sys
 from dotenv import load_dotenv
 
 # Load environment variables from .env file
-load_dotenv()
+load_dotenv('./.env')
 ENV=os.getenv('ENVIRONMENT')
 
 if __name__ == "__main__":
