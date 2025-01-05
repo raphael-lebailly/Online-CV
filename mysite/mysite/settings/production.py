@@ -5,7 +5,6 @@ from dotenv import load_dotenv
 current_dir = os.path.dirname(os.path.abspath(__file__))
 
 os.chdir(current_dir)
-
 load_dotenv("../../.env")
 ENV=os.getenv('ENVIRONMENT')
 
