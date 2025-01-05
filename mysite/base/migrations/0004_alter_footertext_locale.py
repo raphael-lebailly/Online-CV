@@ -8,7 +8,7 @@ class Migration(migrations.Migration):
 
     dependencies = [
         ('base', '0003_formpage_formfield'),
-        ('wagtailcore', '0094_alter_page_locale'),
+        #('wagtailcore', '0094_alter_page_locale'),
     ]
 
     operations = [

@@ -7,6 +7,9 @@ from dotenv import load_dotenv
 load_dotenv('./.env')
 ENV=os.getenv('ENVIRONMENT')
 
+current_dir = os.path.dirname(os.path.abspath(__file__))
+os.chdir(current_dir)
+
 if __name__ == "__main__":
     os.environ.setdefault("DJANGO_SETTINGS_MODULE", f"mysite.settings.{ENV}")
 

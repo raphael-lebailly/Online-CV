@@ -6,4 +6,5 @@ mysite/mysite/trash
 mysite/db.sqlite3
 mysite/settings/__pycache__/production.cpython-311.pyc
 mysite/settings/__pycache__/base.cpython-311.pyc
+mysite/mysite/settings/development.py
 .DS_Store
