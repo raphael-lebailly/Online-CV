@@ -4,7 +4,8 @@ mysite/mysite/settings/dev.py
 mysite/mysite/settings/production.py
 mysite/mysite/trash
 mysite/db.sqlite3
-mysite/__pycache__
-mysite/mysite/settings/__pycache__
+mysite/__pycache__/
+mysite/mysite/__pycache__/
+mysite/mysite/settings/__pycache__/
 mysite/mysite/settings/development.py
 .DS_Store
