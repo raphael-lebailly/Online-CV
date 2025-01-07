@@ -2,7 +2,7 @@ mysite/.env
 mysite/.venv
 mysite/mysite/settings/dev.py
 mysite/mysite/settings/production.py
-mysite/mysite/trash
+mysite/mysite/trash/
 mysite/db.sqlite3
 mysite/__pycache__/
 mysite/mysite/__pycache__/
