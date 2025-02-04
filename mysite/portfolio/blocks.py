@@ -12,6 +12,8 @@ from wagtail.images.blocks import ImageChooserBlock
 
 from base.blocks import BaseStreamBlock
 
+import os # Get the current working directory
+
 # add CardBlock:
 class CardBlock(StructBlock):
     heading = CharBlock()
@@ -19,6 +21,8 @@ class CardBlock(StructBlock):
     image = ImageChooserBlock(required=False)
 
     class Meta:
+        current_directory = os.getcwd()
+        print(f"25 >>> The current working directory is:sss {current_directory}")
         icon = "form"
         template = "portfolio/blocks/card_block.html"
 
